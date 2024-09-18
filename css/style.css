@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #352F5B;
+    font-family: sans-serif;
+}
+.container {
+    padding: 50px 80px;
+    max-width: 95%;
+    max-height: 100%;
+    border-radius: 15px;
+    background-color: #2A2649;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    overflow-wrap : anywhere;
+}
+.header {
+    text-align: center;
+    color: #fff;
+    font-size: 27px ;
+    margin-bottom: 20px;
+}
+.task-input {
+    height: 40px;
+    outline: none;
+}
+
+#add-btn {
+    width: 50%; 
+    margin: auto;
+    margin-top: 15px;
+    padding: 4px 0px; 
+    border-radius: 3px; 
+    background-color: #d9d8e4; 
+    border: none;
+    font-size: 16px ;
+    cursor: pointer;
+    transition: .3s ;
+}
+#add-btn:hover {
+    background-color: #2b216b;
+    color: #fff;
+}
+li {
+    list-style: none;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.edit-btn , .delete-btn {
+    background-color: #2A2649;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.delete-btn {
+    color: #ff1a1adf;
+    margin: 0px 15px 0px 0px;
+    transition: .3s;
+}
+.edit-btn  {
+    color: #9f95e0b5 ;
+    transition: .3s;
+}
+.delete-btn:hover , .edit-btn:hover ,input[type="checkbox"]:hover {
+    scale: 1.45;
+}   
+.notification {
+    position: absolute ;
+    padding: 3%;
+    color: #fff;
+    font-size: 20px;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    transition: 0.3s ;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked {
+    accent-color: green;
+}    
+.divNote {
+    position: absolute;
+    z-index: 1;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff; 
+}
+.span {
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.spanThrough {
+    text-decoration: line-through;
+    font-size: 16px;
+    color: #ffffffba ;
+    display: inline-block;
+    margin-right: 20px;
+}
+li {
+    cursor: pointer;
+    transition: .3s;
+}
+li:hover {
+    scale: 1.1;
+}
